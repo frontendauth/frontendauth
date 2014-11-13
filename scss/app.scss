@@ -1,0 +1,94 @@
+@import "settings";
+@import "foundation";
+
+// COLORS
+$blue: #007295;
+$gray: #D2D2D2;
+$green: #005009;
+$orange: #B66F57;
+$white: #E0E4E5;
+// NAMED COLORS
+  // THEME COLORS
+$body-bg-color: $white;
+$color-primary: $orange;
+$color-secondary: $green;
+  // GENERAL NAMED COLORS
+$hero-background-color: $color-primary;
+
+// FONTS
+$font-family-normal: 'News Cycle', sans-serif;
+$font-family-headline: 'Montserrat', sans-serif;
+$font-size-large: 1.75rem;
+$font-size-normal: 1.4rem;
+$font-size-small: $font-size-normal * .75;
+$font-size-headline: 3rem;
+
+// BASE
+body{
+  background-color: $body-bg-color;
+  font-family: $font-family-normal;
+  font-size: $font-size-normal;
+}
+a{
+  color: $color-secondary;
+}
+.button{
+  background-color: $color-secondary;
+}
+p{
+  font-size: $font-size-normal;
+  .intro-copy-wrap & {
+    font-size: $font-size-large;
+  }
+}
+label,
+li,
+ul{
+  font-size: $font-size-normal;
+}
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-family: $font-family-headline;
+    font-size: $font-size-headline;
+  }
+}
+
+// MODULES
+
+.hero{
+  background: $hero-background-color;
+  background-image: url('../img/frontendauth-banner.jpg');
+  background-size: 100%;
+  min-height: 400px;
+  .headline{
+    color: $white;
+    margin-top: 3em;
+  }
+}
+.hero-content{
+  background: $gray;
+  margin-bottom: 1em;
+  padding: 1em 0;
+}
+.footer{
+  background-color: $hero-background-color;
+  margin-top: 2em;
+  padding-top: 2em;
+  padding-bottom: 4em;
+}
+.headline{
+  font-family: $font-family-headline;
+}
+.intro-copy-wrap{
+  padding: 2em 0;
+}
+.cta-col{
+}
+.meetup-list{
+  li{
+    list-style: none;
+  }
+}
+.meetup-icon:hover{
+  background-color: $color-secondary;
+}

@@ -1,0 +1,11 @@
+.DS_Store
+thumbs.db
+*.swp
+*.swo
+
+node_modules
+npm_debug.log
+
+bower_components
+
+.sass-cache
