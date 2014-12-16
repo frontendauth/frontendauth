@@ -1,13 +1,24 @@
+var paths = {
+  styles: {
+    src : ['scss/**/*.scss','scss/**/*.sass'],
+    dist : 'dist/css'
+  }
+};
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
     sass: {
       options: {
-        includePaths: ['bower_components/foundation/scss']
+        sourceMap: true,
+        includePaths: [
+          'bower_components/foundation/scss',
+          'bower_components/juice/dist'
+        ]
       },
       dist: {
         options: {
+          sourceMap: true,
           outputStyle: 'compressed'
         },
         files: {
@@ -16,11 +27,15 @@ module.exports = function(grunt) {
       }
     },
 
+    views: {
+
+    },
+
     watch: {
       grunt: { files: ['Gruntfile.js'] },
 
       sass: {
-        files: 'scss/**/*.scss',
+        files: paths.styles.src,
         tasks: ['sass']
       }
     }
