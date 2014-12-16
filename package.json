@@ -1,6 +1,6 @@
 {
   "name": "foundation-libsass-template",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "scripts": {
     "build": "grunt build",
     "postinstall": "bower cache clean && bower install",
