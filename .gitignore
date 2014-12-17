@@ -9,3 +9,5 @@ npm_debug.log
 bower_components
 
 .sass-cache
+
+/dist
