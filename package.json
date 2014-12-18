@@ -3,7 +3,8 @@
   "version": "0.1.1",
   "scripts": {
     "build": "grunt build",
-    "postinstall": "bower cache clean && bower install",
+    "deploy": "",
+    "postinstall": "bower cache clean && bower install && budle install",
     "serve": "npm run build && open dist/index.html && npm run watch",
     "watch": "grunt"
   },
