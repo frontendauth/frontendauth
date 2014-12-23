@@ -86,6 +86,29 @@ module.exports = function(grunt) {
       },
     },
 
+    /**
+     * Deploy
+     */
+    secret: grunt.file.readJSON('secret.json'),
+    environments: {
+      prod: {
+        // Environment specific options here
+        options: {
+          host: '<%= secret.prod.host %>',
+          username: '<%= secret.prod.username %>',
+          password: '<%= secret.prod.password %>',
+          port: '<%= secret.prod.port %>',
+          deploy_path: '<%= secret.prod.deploy_path %>',
+          local_path: '<%= secret.prod.local_path %>',
+          current_symlink: '<%= secret.prod.current_symlink %>',
+          debug: '<%= secret.prod.debug %>'
+          // before_deploy: 'cd /sites/great_project/releases/current && forever stopall',
+          // after_deploy: 'cd /sites/great_project/releases/current && npm install && forever start app.js'
+          // "deploy_path": "/home/frontend/public_html/deploy",
+        }
+      }
+    },
+
     watch: {
       grunt: { files: ['Gruntfile.js'] },
 
@@ -99,7 +122,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-ssh-deploy');
 
+  grunt.task.registerTask('deploy', ['ssh_deploy:prod']);
   grunt.task.registerTask('images', ['copy:images']);
   grunt.task.registerTask('server', ['copy:server']);
   grunt.task.registerTask('scripts', ['copy:scripts']);

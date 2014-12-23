@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "scripts": {
     "build": "grunt build",
-    "deploy": "",
+    "deploy": "grunt deploy",
     "postinstall": "bower cache clean && bower install && budle install",
     "serve": "npm run build && open dist/index.html && npm run watch",
     "watch": "grunt"
@@ -14,6 +14,7 @@
     "grunt": "~0.4.1",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-sass": "~0.17.0",
-    "grunt-contrib-copy": "~0.7.0"
+    "grunt-contrib-copy": "~0.7.0",
+    "grunt-ssh-deploy": "~0.2.2"
   }
 }
