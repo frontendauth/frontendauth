@@ -1,0 +1,94 @@
+doctype html
+html.no-js(lang='en')
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet")
+    title Front End Authority .org
+    link(href='http://fonts.googleapis.com/css?family=News+Cycle:400,700|Montserrat:700' rel='stylesheet' type='text/css')
+    link(rel="stylesheet" href="css/app.css")
+    //- script(src="bower_components/modernizr/modernizr.js")
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js")
+    link(rel="icon" type="image/ico" href="favicon.ico")
+  body
+    .hero
+      .row.text-center
+        .small-12.columns
+          img.headline(src="./img/frontendauth-logo.png" alt="FRONT END AUTHORITY")
+    .row.intro-copy-wrap
+      .small-12.columns
+        p Front End Authority promotes the ongoing education of front end technologies.
+        p Part digital, part physical, we aim to bring like-minded pros and learners together to share knowledge, make connections, have some beers, and stay up to date on the constantly changing world of Front End Web Development.
+        p.text-center.headline By elevating our community
+          br
+          | we can push the web forward
+
+
+    .hero-content
+      .row
+        .small-12.large-4.columns.text-center.cta-col
+          p
+            span.headline See what we're up to:
+            br
+            a(href='http://github.com/frontendauth', target='_blank')
+              i.fa.fa-3x.fa-github
+              a(href='http://twitter.com/frontendauth', target='_blank')
+                i.fa.fa-3x.fa-twitter
+              br
+              a(href='http://www.meetup.com/frontendauthority')
+                img.meetup-icon(src='./img/meetup.png')
+        .small-12.large-4.columns.text-center.cta-col
+          p
+            span.headline Join us at our next session:
+          ul.meetup-list
+            li
+              strong
+                a(href='http://www.meetup.com/frontendauthority/events/219106018/') Respoke
+              br
+              | When:
+              a(href='https://www.google.com/calendar/render?action=TEMPLATE&text=Front+End+Authority+Meetup&dates=20150115T270000Z/20150115T290000Z&details=Monthly+Front+End+Authority+Meetup,+Visit+the+Meetup+page+for+more+details:+http://www.meetup.com/frontendauthority&location=2790+Gateway+Road,+Carlsbad,+CA+92009&sf=true&output=xml', target='_blank') 1/15 @7p
+              br
+              | Where:
+              a(href='https://www.google.com/maps/place/2790+Gateway+Rd,+Carlsbad,+CA+92009/@33.128456,-117.246922,17z/data=!4m7!1m4!3m3!1s0x80dc74bf20ebfbf9:0x692a343a8ecce621!2s2790+Gateway+Rd,+Carlsbad,+CA+92009!3b1!3m1!1s0x80dc74bf20ebfbf9:0x692a343a8ecce621') Planning Center, Carlsbad, CA
+              br
+              br
+              a.button.small(href='http://www.meetup.com/frontendauthority/events/219106018/', hrea='_blank') RSVP
+        .small-12.large-4.columns.text-center.cta-col
+            p.headline Stay up to date:
+            #mc_embed_signup
+              form#mc-embedded-subscribe-form.validate(action='http://frontendauthority.us9.list-manage.com/subscribe/post?u=a35787671cf26672af8f802fc&id=640e77f52b', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='novalidate')
+              #mc_embed_signup_scroll
+              .mc-field-group
+                p.small Email Address
+                input#mce-EMAIL.required.email(type='email', value='', name='EMAIL', placeholder='Email Address', aria-required='true')
+              #mce-responses.clear
+                #mce-error-response.response(style='display:none')
+                #mce-success-response.response(style='display:none')
+              div(style='position: absolute; left: -5000px;')
+                input(type='text', name='b_a35787671cf26672af8f802fc_640e77f52b', tabindex='-1', value='')
+              .clear
+                input.button.small(type='submit', value='Subscribe', name='subscribe')
+    .row
+      .small-12.columns.text-center
+        p Who should come?
+          br
+          | You!
+      .small-12.columns
+        p Everyone is welcome to our events. We are made up of people at all skill levels and focuses.
+        p Just bring your awsome self (beer is always welcome too).
+    .footer
+      .row
+        .small-12.columns
+          p If you are interested in speaking at or starting a Front End Authority meetup in your area contact AJ Zane at&nbsp;
+            a(href='http://twitter.com/azanebrain') @azanebrain&nbsp;
+              i.fa.fa-twitter
+            | or at&nbsp;
+            a(href='mailto:androiddreams@AJZane.com') androiddreams@AJZane.com&nbsp;
+              i.fa.fa-envelope-o
+    //- <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    //- <script src="bower_components/foundation/js/foundation.min.js"></script>
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation.min.js')
+    script(type='text/javascript', src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js')
+    include ./includes/mailchimp.html
+    script(src='js/app.js')
+    include ./includes/ganalytics.html

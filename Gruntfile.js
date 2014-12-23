@@ -1,7 +1,8 @@
 // Path variables
 // The assets and distribution paths
 var assets_path = "assets",
-    dist_path = "dist";
+    dist_path = "dist",
+    tmp_path = "tmp";
 // The `paths` object holds the source and distribution paths of all the directories
 // Edit once here and it will work everywhere
 // Most tasks only require the directory by default, but some need files.
@@ -17,7 +18,7 @@ var paths = {
   views: {
     src: assets_path+'/views',
     dist: dist_path,
-    srcfiles: [ assets_path+'/views', assets_path+'/views/**/*.html' ]
+    srcfiles: [ assets_path+'/views', assets_path+'/views/**/*.jade' ]
   },
   images: {
     src: assets_path+'/images',
@@ -109,17 +110,53 @@ module.exports = function(grunt) {
       }
     },
 
+    /**
+     * Jade
+     */
+     jade: {
+       debug: {
+         options: {
+           data: {
+             debug: true
+           }
+         },
+         files: {
+          "dist/index.html": "assets/views/index.jade"
+          // paths.views.dist : paths.views.srcfiles  //"debug.html": "test.jade"
+         }
+       },
+       release: {
+         options: {
+           data: {
+             debug: false
+           }
+         },
+         files: {
+           "release.html": "test.jade"
+         }
+       }
+     },
+
     watch: {
       grunt: { files: ['Gruntfile.js'] },
 
+      scripts: {
+        files: paths.scripts.srcfiles,
+        tasks: ['scripts']
+      },
       styles: {
-        files: paths.styles.src,
+        files: paths.styles.srcfiles,
         tasks: ['sass']
+      },
+      views: {
+        files: paths.views.srcfiles,
+        tasks: ['views']
       }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-ssh-deploy');
@@ -129,7 +166,7 @@ module.exports = function(grunt) {
   grunt.task.registerTask('server', ['copy:server']);
   grunt.task.registerTask('scripts', ['copy:scripts']);
   grunt.task.registerTask('styles', ['sass']);
-  grunt.task.registerTask('views', ['copy:views']);
+  grunt.task.registerTask('views', ['jade:debug']);//'copy:views'
 
   grunt.registerTask('build', [
     'images',
