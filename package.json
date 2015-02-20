@@ -16,6 +16,8 @@
     "grunt-sass": "~0.17.0",
     "grunt-contrib-copy": "~0.7.0",
     "grunt-ssh-deploy": "~0.2.2",
-    "grunt-contrib-jade": "~0.14.0"
+    "grunt-contrib-jade": "~0.14.0",
+    "grunt-deploy": "~0.1.7",
+    "grunt-ssh": "~0.12.0"
   }
 }

@@ -105,10 +105,54 @@ module.exports = function(grunt) {
           debug: '<%= secret.prod.debug %>'
           // before_deploy: 'cd /sites/great_project/releases/current && forever stopall',
           // after_deploy: 'cd /sites/great_project/releases/current && npm install && forever start app.js'
-          // "deploy_path": "/home/frontend/public_html/deploy",
         }
       }
     },
+    // deploy: {
+    //   prod: {
+    //     options:{
+    //       servers: [{
+    //         host: '<%= secret.prod.host %>',
+    //         port: '<%= secret.prod.post %>',
+    //         username: '<%= secret.prod.username %>',
+    //         password: '<%= secret.prod.password %>'
+    //       }],
+    //       cmds_before_deploy: ["touch test.test"],
+    //       cmds_after_deploy: ["touch after.test"],
+    //       deploy_path: '<%= secret.prod.deploy_path %>'
+    //       // servers: [{
+    //       //   host: '<%= secret.prod.host %>',
+    //       //   port: '<%= secret.prod.port %>',
+    //       //   username: '<%= secret.prod.username %>',
+    //       //   password: '<%= secret.prod.password %>'
+    //       // }],
+    //       // cmds_before_deploy: ["touch test.test"],
+    //       // cmds_after_deploy: ["touch after.test"],
+    //       // deploy_path: '<%= secret.prod.deploy_path %>'
+    //     }
+    //   }
+    // },
+
+    // sshconfig: {
+    //   someserver: {
+    //     host: '<%= secret.prod.host %>',
+    //     username: '<%= secret.prod.username %>',
+    //     agent: process.env.SSH_AUTH_SOCK,
+    //     agentForward: true
+    //   },
+    // },
+    //
+    // sshexec: {
+    //   deploy: {
+    //     command: [
+    //       'cd ~/public_html/deploy',
+    //       'touch test.test'
+    //       ].join(' && ')
+    //     options: {
+    //       config: 'someserver'
+    //     }
+    //   },
+    // },
 
     /**
      * Jade
@@ -159,9 +203,17 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-sass');
-  grunt.loadNpmTasks('grunt-ssh-deploy');
+  //deploy tool
+  grunt.loadNpmTasks('grunt-ssh-deploy'); //blearg
+  grunt.loadNpmTasks('grunt-deploy');
+  grunt.loadNpmTasks('grunt-ssh');
 
-  grunt.task.registerTask('deploy', ['ssh_deploy:prod']);
+
+  //https://github.com/robwierzbowski/grunt-build-control ? Looks pretty powerful
+
+  grunt.task.registerTask('sshexecdeploy', ['sshexec:deploy']);
+  grunt.task.registerTask('sshdeploy', ['ssh_deploy:prod']);
+  grunt.task.registerTask('deploy', ['deploy:prod']);
   grunt.task.registerTask('images', ['copy:images']);
   grunt.task.registerTask('server', ['copy:server']);
   grunt.task.registerTask('scripts', ['copy:scripts']);
