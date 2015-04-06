@@ -4,7 +4,7 @@
   "scripts": {
     "build": "grunt build",
     "deploy": "grunt deploy",
-    "postinstall": "bower cache clean && bower install && budle install",
+    "postinstall": "bower cache clean && bower install && bundle install",
     "serve": "npm run build && open dist/index.html && npm run watch",
     "watch": "grunt"
   },
