@@ -11,7 +11,7 @@ You'll need to have the following items installed before continuing.
 
 ## Quickstart
 
-Run `npm run serve` to develop, and `npm run build` to build for production
+Run `npm start` to develop, and `npm run build` to build for production
 
 ## Deployment
 
