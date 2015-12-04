@@ -23,10 +23,27 @@ html.no-js(lang='en')
 
     .hero-content
       .row
-        .small-12.large-4.columns.text-center.cta-col
+        .small-12.text-center
+          p
+            span.headline Join us at our next session:
+          ul.meetup-list
+            li
+              strong
+                a(href='http://www.meetup.com/frontendauthority/events/226825724/') Hands on with Ionic
+              br
+              | When: 
+              a(href='https://www.google.com/calendar/render?action=TEMPLATE&text=Front+End+Authority+Meetup&dates=20160121T260000Z/20160121T280000Z&details=Monthly+Front+End+Authority+Meetup,+Visit+the+Meetup+page+for+more+details:+http://www.meetup.com/frontendauthority&location=2788+Gateway+Road,+Carlsbad,+CA+92009&sf=true&output=xml', target='_blank') 1/21 @7p
+              br
+              | Where: 
+              a(href='https://www.google.com/maps/place/2788+Gateway+Rd,+Carlsbad,+CA+92009/@33.128456,-117.246922,17z/data=!4m7!1m4!3m3!1s0x80dc74bf20ebfbf9:0x692a343a8ecce621!2s2788+Gateway+Rd,+Carlsbad,+CA+92009!3b1!3m1!1s0x80dc74bf20ebfbf9:0x692a343a8ecce621') Planning Center, Carlsbad, CA
+              br
+              br
+              a.button.small(href='http://www.meetup.com/frontendauthority/events/226825724/', hrea='_blank') RSVP
+      .row
+        .small-12.large-6.columns.text-center.cta-col
           p
             span.headline See what we're up to:
-            br
+          p
             a(href='http://github.com/frontendauth', target='_blank')
               i.fa.fa-3x.fa-github
               a(href='http://twitter.com/frontendauth', target='_blank')
@@ -34,23 +51,14 @@ html.no-js(lang='en')
               br
               a(href='http://www.meetup.com/frontendauthority')
                 img.meetup-icon(src='./img/meetup.png')
-        .small-12.large-4.columns.text-center.cta-col
-          p
-            span.headline Join us at our next session:
-          ul.meetup-list
-            li
-              strong
-                a(href='http://www.meetup.com/frontendauthority/events/225528281/') Intro to POST CSS
-              br
-              | When: 
-              a(href='https://www.google.com/calendar/render?action=TEMPLATE&text=Front+End+Authority+Meetup&dates=20151015T260000Z/20151015T280000Z&details=Monthly+Front+End+Authority+Meetup,+Visit+the+Meetup+page+for+more+details:+http://www.meetup.com/frontendauthority&location=2790+Gateway+Road,+Carlsbad,+CA+92009&sf=true&output=xml', target='_blank') 10/15 @7p
-              br
-              | Where: 
-              a(href='https://www.google.com/maps/place/2790+Gateway+Rd,+Carlsbad,+CA+92009/@33.128456,-117.246922,17z/data=!4m7!1m4!3m3!1s0x80dc74bf20ebfbf9:0x692a343a8ecce621!2s2790+Gateway+Rd,+Carlsbad,+CA+92009!3b1!3m1!1s0x80dc74bf20ebfbf9:0x692a343a8ecce621') Planning Center, Carlsbad, CA
-              br
-              br
-              a.button.small(href='http://www.meetup.com/frontendauthority/events/225528281/', hrea='_blank') RSVP
-        .small-12.large-4.columns.text-center.cta-col
+          br
+          p 
+            span.headline Join us on 
+              a(href="https://frontendauthority.slack.com" target="_blank") Slack!
+            br
+            | Join our online community by sharing what you're learning, asking questions, and contributing to our group projects: 
+            a(href="https://frontendauthority.slack.com" target="_blank") frontendauthority.slack.com
+        .small-12.large-6.columns.text-center.cta-col
             p.headline Stay up to date:
             p Join our mailing list to stay in the loop about our events and the chance to win awesome deals for tools and conferences:
             include ./includes/mailchimp.html
