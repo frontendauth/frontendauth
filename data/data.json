@@ -1,0 +1,70 @@
+{
+  "events": [
+    {
+      "date": "01/29/2016",
+      "date_time": "19:00",
+      "description": "AJ Zane will lead a deep dive into his experience helping create Represent Me during the recent Startup Weekend Social Impact event. The Represent Me app let's you quickly review summaries of current legislation and compares your stance (for/against/undecided) to your representatives, letting you see if they fall in line with your beliefs and are actually representing you. \n The presentation will explore how WordPress was used as a backend service, how Ionic, HTML, and AngularJS were used to create the Android prototype, and the design and dev decisions made to quickly launch a $58 company in 54 hours. \n The presentation will be followed by a hands-on, Ionic workshop.",
+      "featured_image": "",
+      "gallery": [""],
+      "location": "Planning Center",
+      "presenter": "AJ Zane",
+      "thumbnail": "",
+      "title": "Hands On With Ionic",
+      "topics": ["ionic"],
+    },
+    {
+      "date": "11/19/2015",
+      "date_time": "19:00",
+      "description": "Yuya Oda will share his insight and experience as a 'designer who codes' on how to facilitate productive workflows between designers and developers.",
+      "featured_image": "",
+      "gallery": [""],
+      "location": "Planning Center",
+      "presenter": "Yuya Oda",
+      "thumbnail": "",
+      "title": "Developing for Design",
+      "topics": ["design"],
+      "video_length": "21:44",
+      "video_link": "https://www.youtube.com/watch?v=FgXiOuo8jQU",
+    }
+  ],
+  "organizers": [
+    "AJ Zane",
+    "Nelson Abalos Jr.",
+    "Tanner Mares",
+  ],
+  "speakers": [
+    {
+      "biography": "AJ Zane can jam with the console cowboys in cyberspace. He focuses on WordPress, Sass, Angular, & beer. He organizes Front End Authority, admins for the 15,000+ member Advanced WordPress group, and is a Front End Dev at Veyo Logistics.",
+      "picture": "",
+      "name": "AJ Zane",
+      "social_media": [
+        { "twitter": "azanebrain" },
+      ],
+      "website": "http://AJZane.com",
+    },
+    {
+      "biography": "At the tender age of 16, Yuya busted out of Japan and set out for the mountainous landscape of Southern Utah to expand his inner creativity. Immediately Yuya felt a connection to the local music and film scene. While juggling his graphic design studies he assumed the full time job of being the life of the party and DJ’ing for his college radio station. \n After visiting friends in SoCal Yuya fell in love with San Diego and soon thereafter moved to North Park to be closer to its vibrant music scene and creative community. Self described as “just a regular dude,” who loves to skateboard and play guitar. \n Yuya is a super-passionate, ultra-creative powerhouse but don’t catch him in the morning before he’s had his first of 3 cups of Joe or you might encounter his inner Darth Vader.",
+      "picture": "",
+      "name": "Yuya Oda",
+      "social_media": [
+        { "dribbble": "yoda" },
+      ],
+      "website": "http://yuyaodadesign.com",
+    },
+  ],
+  "sponsors": [
+    {
+      "name": "Planning Center",
+      "address": "2788 Gateway Road, Carlsbad, CA",
+      "directions": "",
+      "parking_instructions" : "",
+      "picture": "",
+      "website": "http://get.planningcenteronline.com",
+    },
+    {
+      "name": "Front End Authority",
+      "picture": "",
+      "website": "https://frontendmasters.com",
+    },
+  ],
+}
