@@ -8,7 +8,29 @@ Pull requests welcome! :muscle:
 
 For questions, suggestions, and the rest, contact us on twitter at [@frontendauth](https://twitter.com/frontendauth) or through email at FrontEndAuth@GMail.com
 
-LICENSE: GPL-3.0+
+# SETUP
+
+This [VueJS](http://vuejs.org/) project was setup with the Vue-Cli tool (`vue init webpack my-project`)
+
+To get started:
+
+```
+cd my-project
+npm install
+npm run dev
+```
+
+If you aren't familiar with NPM (Node Package Manager) see the [getting started docs](https://docs.npmjs.com/getting-started/installing-node). Checkout the docs for 
+  
+# STANDARDS
+
+This project uses the [JavaScript Standard Style](https://github.com/feross/standard)
+
+See the README in my-project for details on how to run the project
+
+Unit Tests are run with Karma + Mocha. End To End tests are run with Nightwatch
+
+# LICENSE: GPL-3.0+
 
 FrontEndAuthority.org website
 Copyright (C) 2017, Front End Authority Meetup Group
