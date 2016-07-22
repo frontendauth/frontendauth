@@ -1,6 +1,7 @@
 <template lang="html">
   <img class="logo" src=".././assets/logo.png">
   <hello></hello>
+  <events></events>
   <p>
     Welcome to your Vue.js app!
   </p>
@@ -22,6 +23,7 @@
 
 <script>
 import Hello from './Hello.vue'
+import Events from './Events.vue'
 
 export default {
   data: function () {
@@ -33,7 +35,8 @@ export default {
   attached: function () {},
   methods: {},
   components: {
-    Hello
+    Hello,
+    Events
   }
 }
 </script>

@@ -1,9 +1,12 @@
 var App = require('./App')
 var Vue = require('vue')
 var VueRouter = require('vue-router')
+var VueResource = require('vue-resource')
+
 var Foo = require('./components/Foo')
 
 Vue.use(VueRouter)
+  .use(VueResource)
 
 var Bar = Vue.extend({
   template: '<p>This is bar!</p>'
