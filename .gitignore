@@ -4,8 +4,13 @@
 *.log
 .tmp
  
+# Tests
+selenium-debug.log
+test/unit/coverage
+test/e2e/reports
+
 # The distribution directories
-/dist*/
+dist/
  
 ##########################
 ##  __   __   __|  ___  ##
@@ -13,6 +18,7 @@
 ##########################
 node_modules
 npm_debug.log
+npm-debug.log
  
 ##################################
 ## |__   __           ___   __  ##

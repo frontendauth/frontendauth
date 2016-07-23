@@ -8,19 +8,42 @@ Pull requests welcome! :muscle:
 
 For questions, suggestions, and the rest, contact us on twitter at [@frontendauth](https://twitter.com/frontendauth) or through email at FrontEndAuth@GMail.com
 
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
 # SETUP
 
 This [VueJS](http://vuejs.org/) project was setup with the Vue-Cli tool (`vue init webpack my-project`)
 
 To get started:
 
-```
-cd my-project
+If you aren't familiar with NPM (Node Package Manager) see the [getting started docs](https://docs.npmjs.com/getting-started/installing-node). Checkout the docs for 
+
+
+``` bash
+# install dependencies
 npm install
+
+# serve with hot reload at localhost:8080
 npm run dev
 ```
 
-If you aren't familiar with NPM (Node Package Manager) see the [getting started docs](https://docs.npmjs.com/getting-started/installing-node). Checkout the docs for 
+That's it :)
+
+If you want to get fancy, you can build the project to be a production ready website (this will create all of the compiled files in the `dist` directory), or run tests
+
+``` bash
+# build for production with minification
+npm run build
+
+# run unit tests
+npm run unit
+
+# run e2e tests
+npm run e2e
+
+# run all tests
+npm test
+```
   
 # STANDARDS
 
