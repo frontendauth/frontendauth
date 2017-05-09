@@ -2,12 +2,18 @@
   <div id="app">
     <img src="./assets/logo.png">
     <router-view></router-view>
+    <nextEvent></nextEvent>
   </div>
 </template>
 
 <script>
+import NextEvent from '@/components/next-event/Next-Event.vue'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    nextEvent: NextEvent
+  }
 }
 </script>
 
