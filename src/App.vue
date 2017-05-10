@@ -6,8 +6,13 @@
 </template>
 
 <script>
+import NextEvent from '@/components/next-event/NextEvent.vue'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    NextEvent
+  }
 }
 </script>
 

@@ -17,16 +17,27 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
+    <ul>
+      <li>
+      <router-link to="/">Main</router-link>
+      </li>
+    </ul>
+    <next-event></next-event>
   </div>
 </template>
 
 <script>
+import NextEvent from '@/components/next-event/NextEvent'
+
 export default {
   name: 'hello',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Hi Front End!!'
     }
+  },
+  components: {
+    'next-event': NextEvent
   }
 }
 </script>
