@@ -1,7 +1,15 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <router-view></router-view>
+    <div class="footer">
+      <div class="row">
+        <div class="small-12 columns">
+          <p>
+            If you are interested in speaking at or starting a Front End Authority meetup in your area contact AJ Zane at <a href="http://twitter.com/azanebrain">@azanebrain <i class="fa fa-twitter"></i></a>or at <a href="mailto:androiddreams@AJZane.com">androiddreams@AJZane.com <i class="fa fa-envelope-o"></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -12,12 +20,4 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
