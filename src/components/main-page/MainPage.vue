@@ -40,7 +40,14 @@
           <a href="http://www.meetup.com/frontendauthority"><img :src="'/static/img/meetup.png'" class="meetup-icon"></a></a>
          </p>
          <br>
-         <p> <span class="headline">Join us on <a href="https://frontendauthority.slack.com" target="_blank">Slack!</a></span><br>Join our online community by sharing what you're learning, asking questions, and contributing to our group projects: <a href="https://frontendauthority.slack.com" target="_blank">frontendauthority.slack.com</a></p>
+         <p>
+          <span class="headline">Join us on <a href="http://fea-slack-invite.herokuapp.com" target="_blank">Slack!</a></span>
+          <br>
+          Join our online community by sharing what you're learning, asking questions, and contributing to our group projects: <a href="https://frontendauthority.slack.com" target="_blank">frontendauthority.slack.com</a>
+         </p>
+         <p>
+          Invite yourself to our group by entering your email on <a href="http://fea-slack-invite.herokuapp.com/" target="_blank">this invite form</a>
+         </p>
       </div>
       <div class="small-12 large-6 columns text-center cta-col">
          <p class="headline">Stay up to date:</p>
