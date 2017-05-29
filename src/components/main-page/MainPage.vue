@@ -17,7 +17,16 @@
       <div class="small-12 text-center">
          <p><span class="headline">Join us at our next session:</span></p>
          <ul class="meetup-list">
-            <li><strong><a href="http://www.meetup.com/frontendauthority/events/231488948/">Agile Process and Open Share</a></strong><br>When: <a href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=Front+End+Authority+Meetup&amp;dates=20160721T260000Z/20160721T280000Z&amp;details=Monthly+Front+End+Authority+Meetup,+Visit+the+Meetup+page+for+more+details:+http://www.meetup.com/frontendauthority&amp;location=2790+Gateway+Road,+Carlsbad,+CA+92009&amp;sf=true&amp;output=xml" target="_blank">7/21 @7p</a><br>Where: <a href="https://www.google.com/maps/place/2790+Gateway+Rd,+Carlsbad,+CA+92009/@33.128456,-117.246922,17z/data=!4m7!1m4!3m3!1s0x80dc74bf20ebfbf9:0x692a343a8ecce621!2s2788+Gateway+Rd,+Carlsbad,+CA+92009!3b1!3m1!1s0x80dc74bf20ebfbf9:0x692a343a8ecce621">Planning Center, Carlsbad, CA</a><br><br><a href="http://www.meetup.com/frontendauthority/events/231488948/" hrea="_blank" class="button small">RSVP</a></li>
+            <li>
+              <strong>
+                <a href="https://www.meetup.com/frontendauthority/events/239760351/">Online VueJS Workshop and Sync</a>
+              </strong>
+              <br>
+              When: <a href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=Front+End+Authority+Meetup&amp;dates=20170628T260000Z/20170628T280000Z&amp;details=Monthly+Front+End+Authority+Meetup,+Visit+the+Meetup+page+for+more+details:+http://www.meetup.com/frontendauthority&amp;location=2790+Gateway+Road,+Carlsbad,+CA+92009&amp;sf=true&amp;output=xml" target="_blank">6/28 @7p PST</a>
+              <br>
+              <!--Where: <a href="https://www.google.com/maps/place/2790+Gateway+Rd,+Carlsbad,+CA+92009/@33.128456,-117.246922,17z/data=!4m7!1m4!3m3!1s0x80dc74bf20ebfbf9:0x692a343a8ecce621!2s2788+Gateway+Rd,+Carlsbad,+CA+92009!3b1!3m1!1s0x80dc74bf20ebfbf9:0x692a343a8ecce621">Planning Center, Carlsbad, CA</a>-->
+              Where: Online (link coming soon)
+              <br><br><a href="http://www.meetup.com/frontendauthority/events/239760351/" hrea="_blank" class="button small">RSVP</a></li>
          </ul>
       </div>
    </div>
