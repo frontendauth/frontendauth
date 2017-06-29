@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <FEAHeader></FEAHeader>
     <router-view></router-view>
     <div class="footer">
       <div class="row">
@@ -14,8 +15,13 @@
 </template>
 
 <script>
+import Header from '@/components/header/Header'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    'FEAHeader': Header,
+  }
 }
 </script>
 

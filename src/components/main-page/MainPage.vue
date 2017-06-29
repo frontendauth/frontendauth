@@ -1,10 +1,5 @@
 <template>
 <div>
-<div class="hero">
-   <div class="row text-center">
-      <div class="small-12 columns"><img :src="'/static/img/frontendauth-logo.png'" alt="FRONT END AUTHORITY" class="headline"></div>
-   </div>
-</div>
 <div class="row intro-copy-wrap">
    <div class="small-12 columns">
       <p>Front End Authority promotes the ongoing education of front end technologies.</p>
